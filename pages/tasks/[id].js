@@ -14,7 +14,7 @@ const EditTask = () => {
   const router = useRouter();
   const { id } = router.query;
 
-  // ✅ Check if the user is authenticated via JWT
+  //  Check if the user is authenticated via JWT
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (!token) {
